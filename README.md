@@ -1,2 +1,2 @@
 # muAlchemy
-sqlaclhemy db orm for used in muscraper ELT
+sqlaclhemy mapping of db, used in muscraper ELT.
