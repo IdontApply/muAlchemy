@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: mualchemy
+Version: 0.0.1
+Summary: sqlaclhemy mapping of db, used in muscraper ELT.
+Home-page: URL to get it at.
+Author: Maytham Alherz
+Author-email: gmaytham@gmail.com
+License: Apache 2.0
+Description: # muAlchemy
+        sqlaclhemy mapping of db, used in muscraper ELT.
+        
+Platform: UNKNOWN
