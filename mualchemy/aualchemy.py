@@ -11,7 +11,7 @@ def tables(ymalfilepath):
     '''
     user, host, password, db = configreader.configreader(ymalfilepath)
     Base = automap_base()
-    engine = create_engine('postgresql+psycopg2://'+user+':'+password+'@'+host+'/'+db, echo=True)
+    engine = create_engine('postgresql+psycopg2://'+user+':'+password+'@'+host+':'+port+'/'+db, echo=True)
     Base.prepare(engine, reflect=True)
 
     session = Session(engine)
