@@ -9,7 +9,7 @@ def tables(ymalfilepath):
     maps a postgres ecommerce database, returns the mapped ORM form of the tables
     needs a dbconfig.yaml to work
     '''
-    user, host, password, db = configreader.configreader(ymalfilepath)
+    user, host, password, dbو port = configreader.configreader(ymalfilepath)
     Base = automap_base()
     engine = create_engine('postgresql+psycopg2://'+user+':'+password+'@'+host+':'+port+'/'+db, echo=True)
     Base.prepare(engine, reflect=True)
