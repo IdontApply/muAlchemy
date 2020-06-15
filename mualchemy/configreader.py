@@ -9,7 +9,7 @@ def configreader(configfile):
     postgres = cfg['postgres']
     user = postgres['user']
     host = postgres['host']
-    port = postgres['port']
+    port = str(postgres['port'])
     password = str(postgres['passwd'])
     db = postgres['db']
     return user, host, password, db, port
