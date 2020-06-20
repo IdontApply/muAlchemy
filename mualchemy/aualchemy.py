@@ -4,7 +4,7 @@ from sqlalchemy.orm import Session
 from . import configreader
 from os import getenv
 def connection_envi_var():
-    user = = getenv('POSTGRES_USER')
+    user = getenv('POSTGRES_USER')
     host = getenv('POSTGRES_HOST')
     password = getenv('POSTGRES_PASSWORD')
     db = getenv('POSTGRES_DATABASE')
