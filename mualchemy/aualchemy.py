@@ -2,13 +2,13 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from . import configreader
-from os import os.getenv
+from os import getenv
 def connection_envi_var():
-    user = = os.getenv('POSTGRES_USER')
-    host = os.getenv('POSTGRES_HOST')
-    password = os.getenv('POSTGRES_PASSWORD')
-    db = os.getenv('POSTGRES_DATABASE')
-    port = os.getenv('POSTGRES_PORT')
+    user = = getenv('POSTGRES_USER')
+    host = getenv('POSTGRES_HOST')
+    password = getenv('POSTGRES_PASSWORD')
+    db = getenv('POSTGRES_DATABASE')
+    port = getenv('POSTGRES_PORT')
     return user, host, password, db, port
 def tables():
     '''
