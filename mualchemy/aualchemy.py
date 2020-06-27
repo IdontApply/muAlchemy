@@ -24,7 +24,7 @@ def tables():
 
     user, host, password, db, port = connection_envi_var()
     Base = automap_base()
-    engine = create_engine('postgresql+psycopg2://'+user+':'+password+'@'+host+':'+port+'/'+db, echo=False)
+    engine = create_engine('postgresql+psycopg2://'+user+':'+password+'@'+host+':'+port+'/'+db, echo=True)
     Base.prepare(engine, reflect=True)
 
     session = Session(engine)
